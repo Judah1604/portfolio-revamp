@@ -1,0 +1,26 @@
+nav {
+    margin-top: 20px;
+    .navbar-brand {
+        img {
+            height: 50px;
+        }
+    }
+
+    .navlinks {
+        display: flex;
+        gap: 50px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+}
+
+.stars-img {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+}
