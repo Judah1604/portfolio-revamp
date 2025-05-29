@@ -1,0 +1,31 @@
+.about {
+  margin: 320px auto;
+  position: relative;
+  overflow: visible;
+}
+.about .section-highlight {
+  width: 100px;
+}
+.about .intro a {
+  color: white;
+  text-decoration: none;
+}
+.about .highlight {
+  position: absolute;
+  width: 95px;
+  right: 30%;
+  bottom: -3px;
+}
+.about .glow1,
+.about .glow2 {
+  position: absolute;
+  top: 0;
+  height: 700px;
+}
+.about .glow1 {
+  left: 0;
+  top: -250px;
+}
+.about .glow2 {
+  right: 0;
+}/*# sourceMappingURL=about.css.map */

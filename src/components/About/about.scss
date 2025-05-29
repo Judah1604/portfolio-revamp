@@ -1,0 +1,37 @@
+.about {
+    margin: 320px auto;
+    position: relative;
+    overflow: visible;
+
+    .section-highlight {
+        width: 100px;
+    }
+
+    .intro a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .highlight {
+        position: absolute;
+        width: 95px;
+        right: 30%;
+        bottom: -3px;
+    }
+
+    .glow1,
+    .glow2 {
+        position: absolute;
+        top: 0;
+        height: 700px;
+    }
+
+    .glow1 {
+        left: 0;
+        top: -250px;
+    }
+
+    .glow2 {
+        right: 0;
+    }
+}

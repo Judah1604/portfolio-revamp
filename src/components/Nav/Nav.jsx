@@ -3,7 +3,7 @@ import "./nav.css";
 function Nav() {
 	return (
 		<>
-			<img src="/Effects/stars.png" className="stars-img" />
+			
 			<nav className="navbar">
 				<div className="container">
 					<a href="/" className="navbar-brand">
