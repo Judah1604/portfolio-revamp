@@ -1,0 +1,35 @@
+.services .section-highlight {
+  margin-bottom: 10px;
+}
+.services .header {
+  font-size: 3.3em;
+  font-weight: 600;
+}
+.services .row {
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  margin-top: 30px;
+  gap: 50px;
+}
+.services .row .dev {
+  border-color: #FFAE33;
+}
+.services .row .design {
+  border-color: #287EFF;
+}
+.services .row > * {
+  padding: 40px;
+  border: 3px solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services .row > * img {
+  width: 130px;
+}
+.services .row > * h1 {
+  margin-top: 10px;
+}/*# sourceMappingURL=services.css.map */

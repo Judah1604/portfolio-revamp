@@ -1,10 +1,8 @@
 .about {
   margin: 320px auto;
+  margin-bottom: 100px;
   position: relative;
   overflow: visible;
-}
-.about .section-highlight {
-  width: 100px;
 }
 .about .intro a {
   color: white;
@@ -16,16 +14,67 @@
   right: 30%;
   bottom: -3px;
 }
-.about .glow1,
-.about .glow2 {
+
+.glow1,
+.glow2 {
   position: absolute;
   top: 0;
   height: 700px;
 }
-.about .glow1 {
+
+.glow1 {
   left: 0;
   top: -250px;
 }
-.about .glow2 {
+
+.glow2 {
   right: 0;
+}
+
+.info-wrapper {
+  position: relative;
+}
+.info-wrapper .glow1, .info-wrapper .glow2 {
+  top: 0;
+}
+
+.info {
+  margin: 120px auto;
+  position: relative;
+  padding-bottom: 45px;
+}
+.info .section-highlight {
+  margin-bottom: 10px;
+}
+.info .header {
+  font-size: 3.3em;
+  font-weight: 600;
+}
+.info .doodle {
+  width: 50px;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  z-index: -1;
+}
+.info .btn {
+  box-shadow: 0px 0px 40px rgba(65, 140, 251, 0.3);
+}
+.info .row {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.info .row .text {
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 1.7;
+}
+.info .row .text b {
+  font-weight: 600;
+}
+.info .row .text p {
+  margin-top: 15px;
 }/*# sourceMappingURL=about.css.map */

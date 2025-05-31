@@ -17,6 +17,12 @@ body {
   overflow: hidden;
 }
 
+.section-highlight {
+  width: 90px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 .btn.btn-blue {
   color: white;
   background-image: linear-gradient(180deg, #438EFF, #10468D);
