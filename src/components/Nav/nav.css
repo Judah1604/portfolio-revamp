@@ -13,4 +13,9 @@ nav .navlinks a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+nav .navlinks a:hover {
+  opacity: 1;
 }/*# sourceMappingURL=nav.css.map */

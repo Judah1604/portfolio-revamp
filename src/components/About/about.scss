@@ -16,28 +16,16 @@
         bottom: -3px;
     }
 
-}
+    .glow1 {
+        top: -250px;
+    }
 
-.glow1,
-.glow2 {
-    position: absolute;
-    top: 0;
-    height: 700px;
 }
-
-.glow1 {
-    left: 0;
-    top: -250px;
-}
-
-.glow2 {
-    right: 0;
-}
-
 .info-wrapper {
     position: relative;
 
-    .glow1, .glow2 {
+    .glow1,
+    .glow2 {
         top: 0;
     }
 }
@@ -46,6 +34,7 @@
     margin: 120px auto;
     position: relative;
     padding-bottom: 45px;
+    margin-bottom: 50px;
 
     .section-highlight {
         margin-bottom: 10px;
@@ -89,5 +78,16 @@
 
             }
         }
+    }
+}
+
+.what-i-use {
+    .section-highlight {
+        margin-bottom: 10px;
+    }
+
+    .header {
+        font-size: 3.3em;
+        font-weight: 600;
     }
 }

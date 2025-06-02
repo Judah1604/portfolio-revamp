@@ -1,0 +1,120 @@
+.projects {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: initial;
+}
+.projects .section-highlight {
+  margin-bottom: 10px;
+}
+.projects .header {
+  font-size: 3.3em;
+  font-weight: 600;
+}
+.projects .toggle {
+  margin: auto;
+  margin-top: 20px;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+  gap: 40px;
+  border: 3px solid #4d4d4d;
+  width: 60%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.projects .toggle > * {
+  cursor: pointer;
+}
+.projects .toggle::before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 40%;
+  background-color: #1d64c0;
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.3s ease;
+  transform: translateX(-74%);
+}
+.projects .toggle.dev::before {
+  transform: translateX(40%);
+  width: 55%;
+}
+.projects .wrapper {
+  margin-top: 20px;
+}
+.projects .designs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.projects .design {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #3b3b3b;
+}
+.projects .design .header-img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #3b3b3b;
+}
+.projects .design .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.projects .design .title h2 {
+  font-weight: 500;
+}
+.projects .design .title .tags {
+  opacity: 0.5;
+}
+.projects .design .btns {
+  display: flex;
+  gap: 20px;
+}
+.projects .design .btns .btn-blue {
+  transform: none;
+}
+.projects .design .btns > * {
+  width: 100%;
+}
+.projects .design:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s linear;
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=projects.css.map */

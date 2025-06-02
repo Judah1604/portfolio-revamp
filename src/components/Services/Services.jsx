@@ -2,7 +2,7 @@ import "./services.css";
 
 function Services() {
 	return (
-		<div className="services container text-center">
+		<div className="services container text-center" id="services">
 			<img
 				src="/Effects/Star.png"
 				alt="Star"

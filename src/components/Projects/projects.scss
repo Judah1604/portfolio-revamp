@@ -1,0 +1,141 @@
+.projects {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: initial;
+
+    .section-highlight {
+        margin-bottom: 10px;
+    }
+
+    .header {
+        font-size: 3.3em;
+        font-weight: 600;
+    }
+
+    .toggle {
+        margin: auto;
+        margin-top: 20px;
+        font-size: 1.4em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 500;
+        gap: 40px;
+        border: 3px solid #4d4d4d;
+        width: 60%;
+        padding: 10px 30px;
+        border-radius: 10px;
+        position: relative;
+
+        &>* {
+            cursor: pointer;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 90%;
+            width: 40%;
+            background-color: #1d64c0;
+            border-radius: 5px;
+            z-index: -1;
+            transition: 0.3s ease;
+            transform: translateX(-74%);
+        }
+
+        &.dev::before {
+            transform: translateX(40%);
+            width: 55%;
+        }
+    }
+
+    .wrapper {
+        margin-top: 20px;
+    }
+
+    .designs {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .design {
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 60px;
+        border-bottom: 2px solid #3b3b3b;
+
+        .header-img {
+            width: 100%;
+            border-radius: 15px;
+            border: 1px solid #3b3b3b;
+        }
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            h2 {
+                font-weight: 500;
+            }
+
+            .tags {
+                opacity: 0.5;
+            }
+        }
+
+        .btns {
+            display: flex;
+            gap: 20px;
+
+            .btn-blue {
+                transform: none;
+            }
+
+            &>* {
+                width: 100%;
+            }
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border: none;
+        }
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s linear;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

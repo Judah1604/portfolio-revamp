@@ -17,6 +17,21 @@ body {
   overflow: hidden;
 }
 
+.glow1,
+.glow2 {
+  position: absolute;
+  top: 0;
+  height: 700px;
+}
+
+.glow1 {
+  left: 0;
+}
+
+.glow2 {
+  right: 0;
+}
+
 .section-highlight {
   width: 90px;
   margin: auto;
@@ -40,4 +55,24 @@ body {
 }
 .btn.btn-blue:hover {
   transform: scale(1.03);
+}
+
+.btn.btn-outline {
+  color: white;
+  background: transparent;
+  padding: 12px 40px;
+  border: 2px solid white;
+  font-weight: 500;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn.btn-outline img {
+  width: 20px;
+}
+.btn.btn-outline:hover {
+  background-color: white;
+  color: #030209;
 }/*# sourceMappingURL=common.css.map */
