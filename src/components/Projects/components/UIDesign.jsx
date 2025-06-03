@@ -13,11 +13,7 @@ function UIDesign({ name, tags, viewLink }) {
 				<div className="tags">{tags.join("  |  ")}</div>
 			</div>
 			<div className="btns">
-				<button className="btn btn-blue">
-					<img src="/Icons/grid.svg" alt="grid" />
-					View Pages
-				</button>
-				<a className="btn btn-outline link" href={viewLink}>
+				<a className="btn btn-blue" href={viewLink}>
 					<img src="/Icons/arrow-up-right.svg" alt="link" />
 					Visit Design Link
 				</a>

@@ -19,11 +19,11 @@ function Site({ name, image, langs, codeLink, viewLink }) {
 				})}
 			</div>
 			<div className="btns">
-				<a className="btn btn-blue" href={codeLink}>
+				<a className="btn btn-blue" href={codeLink} target="_blank">
 					<img src="/Icons/code-btn.svg" alt="code" />
 					View Code
 				</a>
-				<a className="btn btn-fill link" href={viewLink}>
+				<a className="btn btn-fill link" href={viewLink} target="_blank">
 					<img src="/Icons/arrow-up-right.svg" alt="link" />
 					Visit Live Site
 				</a>

@@ -74,11 +74,13 @@
 .projects .site .title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 .projects .design .title h2,
 .projects .site .title h2 {
   font-weight: 500;
+  margin: 0;
 }
 .projects .design .title .tags,
 .projects .site .title .tags {
@@ -109,6 +111,12 @@
 .projects .site:last-child {
   padding-bottom: 0;
   border: none;
+}
+.projects .design .btn-blue {
+  margin: auto;
+}
+.projects .design .btn-blue img {
+  margin-right: 4px;
 }
 .projects .site {
   width: 700px;

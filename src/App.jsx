@@ -12,6 +12,7 @@ function App() {
             <About />
             <Projects />
             <Contact />
+            <div className="underglow"></div>
 		</>
 	);
 }

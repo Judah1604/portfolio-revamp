@@ -4,10 +4,10 @@ import "./hero.css";
 function Hero() {
 	return (
 		<>
-            <div className="stars"></div>
+			<Nav />
+			<div className="stars"></div>
 
 			<div className="hero">
-				<Nav />
 				<div className="text container text-center">
 					<h1>
 						Design. <span className="blue">Code.</span>{" "}
@@ -23,7 +23,7 @@ function Hero() {
 					</button>
 				</div>
 			</div>
-            <img src="/Effects/Moon.png" className="moon" />
+			<img src="/Effects/Moon.png" className="moon" />
 		</>
 	);
 }

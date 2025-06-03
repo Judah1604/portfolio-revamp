@@ -79,7 +79,13 @@
   justify-content: center;
   gap: 30px;
   margin-top: 40px;
+  padding: 10px 0;
 }
 .what-i-use .row img {
-  width: 80px;
+  width: 70px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.what-i-use .row img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=about.css.map */

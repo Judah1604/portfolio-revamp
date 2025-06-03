@@ -1,5 +1,11 @@
 nav {
   margin-top: 20px;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 nav .navbar-brand img {
   height: 50px;
