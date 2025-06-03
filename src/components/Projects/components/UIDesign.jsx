@@ -5,7 +5,7 @@ function UIDesign({ name, tags, viewLink }) {
 		<div className="design">
 			<img
 				className="header-img"
-				src={`/Images/DisplayImgs/${name.toLowerCase()}.png`}
+				src={`/Images/DisplayImgs/Design/${name.toLowerCase()}.png`}
 				alt={name}
 			/>
 			<div className="title">

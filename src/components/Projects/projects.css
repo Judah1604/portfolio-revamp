@@ -48,12 +48,14 @@
   margin-top: 20px;
   overflow: hidden;
 }
-.projects .designs {
+.projects .designs,
+.projects .sites {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.projects .design {
+.projects .design,
+.projects .site {
   width: 600px;
   margin: auto;
   display: flex;
@@ -62,41 +64,70 @@
   padding-bottom: 60px;
   border-bottom: 2px solid #3b3b3b;
 }
-.projects .design .header-img {
+.projects .design .header-img,
+.projects .site .header-img {
   width: 100%;
   border-radius: 15px;
   border: 1px solid #3b3b3b;
 }
-.projects .design .title {
+.projects .design .title,
+.projects .site .title {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.projects .design .title h2 {
+.projects .design .title h2,
+.projects .site .title h2 {
   font-weight: 500;
 }
-.projects .design .title .tags {
+.projects .design .title .tags,
+.projects .site .title .tags {
   opacity: 0.5;
 }
-.projects .design .btns {
+.projects .design .btns,
+.projects .site .btns {
   display: flex;
   gap: 20px;
 }
-.projects .design .btns .btn-blue {
+.projects .design .btns .btn-blue,
+.projects .site .btns .btn-blue {
   transform: none;
 }
-.projects .design .btns > * {
+.projects .design .btns > *,
+.projects .site .btns > * {
   width: 100%;
 }
-.projects .design .btns > * img {
+.projects .design .btns > * img,
+.projects .site .btns > * img {
   width: 25px;
 }
-.projects .design .btns .link:hover img {
+.projects .design .btns .link:hover img,
+.projects .site .btns .link:hover img {
   filter: brightness(0);
 }
-.projects .design:last-child {
+.projects .design:last-child,
+.projects .site:last-child {
   padding-bottom: 0;
   border: none;
+}
+.projects .site {
+  width: 700px;
+}
+.projects .site .langs {
+  display: flex;
+  gap: 15px;
+}
+.projects .site .langs > * {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+.projects .site .btn-fill img {
+  filter: brightness(0);
+}
+.projects .site .btn-fill:hover img {
+  filter: brightness(0);
 }
 
 .fadeIn {
