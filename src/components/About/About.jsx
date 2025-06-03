@@ -2,6 +2,19 @@ import Services from "../Services/Services";
 import "./about.css";
 
 function About() {
+	const skills = [
+		"html",
+		"css",
+		"js",
+		"bootstrap",
+		"sass",
+		"react",
+		"redux",
+		"git",
+		"nextjs",
+		"figma",
+	];
+
 	return (
 		<>
 			<div className="about text-center">
@@ -84,6 +97,18 @@ function About() {
 					className="section-highlight"
 				/>
 				<h1>What I Use</h1>
+				<div className="row">
+					{skills.map((skill, index) => {
+						return (
+							<img
+								key={index}
+                                className="col-md-2"
+								src={`/Icons/Skills/${skill}.svg`}
+								alt={skill}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		</>
 	);

@@ -1,5 +1,5 @@
 .projects {
-  margin-top: 150px;
+  margin-top: 90px;
   margin-bottom: 100px;
   position: relative;
   overflow: initial;
@@ -46,6 +46,7 @@
 }
 .projects .wrapper {
   margin-top: 20px;
+  overflow: hidden;
 }
 .projects .designs {
   display: flex;
@@ -86,6 +87,12 @@
 }
 .projects .design .btns > * {
   width: 100%;
+}
+.projects .design .btns > * img {
+  width: 25px;
+}
+.projects .design .btns .link:hover img {
+  filter: brightness(0);
 }
 .projects .design:last-child {
   padding-bottom: 0;

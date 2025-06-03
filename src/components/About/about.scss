@@ -21,6 +21,7 @@
     }
 
 }
+
 .info-wrapper {
     position: relative;
 
@@ -89,5 +90,15 @@
     .header {
         font-size: 3.3em;
         font-weight: 600;
+    }
+
+    .row {
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+
+        img {
+            width: 80px;
+        }
     }
 }

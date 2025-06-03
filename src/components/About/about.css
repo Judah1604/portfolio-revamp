@@ -74,4 +74,12 @@
 .what-i-use .header {
   font-size: 3.3em;
   font-weight: 600;
+}
+.what-i-use .row {
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.what-i-use .row img {
+  width: 80px;
 }/*# sourceMappingURL=about.css.map */
