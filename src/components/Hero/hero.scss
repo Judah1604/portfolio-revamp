@@ -32,6 +32,7 @@
         .btn {
             margin: auto;
             box-shadow: 0px 0px 20px rgba($color: #418CFB, $alpha: 0.3), 0px 0px 100px rgba($color: #418CFB, $alpha: 0.3);
+            width: fit-content;
 
             &:hover {
                 box-shadow: 0px 0px 30px rgba($color: #418CFB, $alpha: 0.3), 0px 0px 110px rgba($color: #418CFB, $alpha: 0.3);

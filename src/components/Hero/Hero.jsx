@@ -28,16 +28,18 @@ function Hero() {
 						Frontend dev + UI/UX designer building sleek, responsive
 						web experiences.
 					</motion.p>
-					<motion.button
+					<motion.a
 						className="btn btn-blue"
 						initial={{ translateY: 140 }}
 						whileInView={{ translateY: 0 }}
 						transition={{ type: "spring", delay: 0.4 }}
 						viewport={{ once: true }}
+                        href="/Judah Oyedele's Resume.pdf"
+                        download
 					>
 						<img src="/Icons/download.svg" />
 						Download Resume
-					</motion.button>
+					</motion.a>
 				</div>
 			</div>
 			<img src="/Effects/Moon.png" className="moon" />

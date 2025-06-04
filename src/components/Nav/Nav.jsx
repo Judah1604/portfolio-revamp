@@ -32,15 +32,17 @@ function Nav() {
 							Projects
 						</motion.a>
 					</div>
-					<motion.button
+					<motion.a
 						className="btn btn-blue icon-left"
 						initial={{ translateY: -80 }}
 						whileInView={{ translateY: 0 }}
 						transition={{ delay: 0.4 }}
+						href="/Judah Oyedele's Resume.pdf"
+						download
 					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
-					</motion.button>
+					</motion.a>
 				</div>
 			</nav>
 		</>

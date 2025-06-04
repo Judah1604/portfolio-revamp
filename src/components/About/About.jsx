@@ -101,10 +101,14 @@ function About() {
 								not only turns heads but turns visitors into
 								loyal users.
 							</p>
-							<button className="btn btn-blue icon-left">
+							<a
+								className="btn btn-blue icon-left"
+								href="/Judah Oyedele's Resume.pdf"
+								download
+							>
 								<img src="/Icons/download.svg" />
 								Download Resume
-							</button>
+							</a>
 						</motion.div>
 						<img
 							src="/Images/Profile.png"
