@@ -9,11 +9,15 @@
         text-decoration: none;
     }
 
+    span {
+        position: relative;
+    }
+
     .highlight {
         position: absolute;
         width: 95px;
-        right: 30%;
-        bottom: -3px;
+        bottom: -10px;
+        left: 0;
     }
 
     .glow1 {
@@ -69,6 +73,7 @@
             padding-left: 40px;
             padding-right: 40px;
             line-height: 1.7;
+            z-index: -1;
 
             b {
                 font-weight: 600;
@@ -96,16 +101,11 @@
         justify-content: center;
         gap: 30px;
         margin-top: 40px;
-        padding: 10px 0 ;
+        padding: 10px 0;
 
         img {
             width: 70px;
             cursor: pointer;
-            transition: 0.3s ease;
-
-            &:hover {
-                transform: scale(1.2);
-            }
         }
     }
 }

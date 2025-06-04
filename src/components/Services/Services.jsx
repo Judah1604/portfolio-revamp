@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import "./services.css";
 
 function Services() {
@@ -10,7 +11,14 @@ function Services() {
 			/>
 			<h1 className="header">Services</h1>
 			<div className="container row">
-				<div className="service design col-md-5">
+				<motion.div
+					className="service design col-md-5"
+					initial={{ translateY: 150 }}
+					whileInView={{ translateY: 0 }}
+					whileHover={{ scale: 1.05, rotate: 5 }}
+					transition={{ type: "spring", bounce: 0.5 }}
+					viewport={{ once: true }}
+				>
 					<img src="/Icons/pen-tool.svg" alt="design" />
 
 					<h1>UI/UX Design</h1>
@@ -23,8 +31,15 @@ function Services() {
 						web app, I always design with purpose and conversion in
 						mind.
 					</p>
-				</div>
-				<div className="service dev col-md-5">
+				</motion.div>
+				<motion.div
+					className="service dev col-md-5"
+					initial={{ translateY: 150 }}
+					whileInView={{ translateY: 0 }}
+					whileHover={{ scale: 1.05, rotate: -5 }}
+					transition={{ type: "spring", bounce: 0.5, delay: 0.1 }}
+					viewport={{ once: true }}
+				>
 					<img src="/Icons/code.svg" alt="code" />
 
 					<h1>Frontend Web Development</h1>
@@ -37,7 +52,7 @@ function Services() {
 						creating seamless, user-friendly interfaces that bring
 						designs to life — and keep users engaged.
 					</p>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);

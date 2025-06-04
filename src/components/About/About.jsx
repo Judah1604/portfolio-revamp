@@ -1,3 +1,4 @@
+import { motion, scale } from "motion/react";
 import Services from "../Services/Services";
 import "./about.css";
 
@@ -15,6 +16,28 @@ function About() {
 		"figma",
 	];
 
+	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { translateY: 40, opacity: 0 },
+		show: {
+			translateY: 0,
+			opacity: 1,
+			transition: { type: "spring", bounce: 0.4 },
+		},
+		hover: {
+			scale: 1.2,
+		},
+	};
+
 	return (
 		<>
 			<div className="about text-center">
@@ -29,16 +52,18 @@ function About() {
 						and beautiful web interfaces. With a strong eye for
 						design and a frontend toolkit to match, I bridge
 						creativity and code to deliver experiences that{" "}
-						<a target="_blank" href="https://wa.me/08166085206">
-							click
-						</a>
+						<span>
+							<a target="_blank" href="https://wa.me/08166085206">
+								click
+							</a>
+							<img
+								className="highlight"
+								src="/Effects/text_highlight.png"
+								alt="Highlight"
+							/>
+						</span>
 						.
 					</h1>
-					<img
-						className="highlight"
-						src="/Effects/text_highlight.png"
-						alt="Highlight"
-					/>
 				</div>
 				<img className="glow1" src="/Effects/Star_1.png" alt="Glow" />
 				<img className="glow2" src="/Effects/Star_2.png" alt="Glow" />
@@ -53,7 +78,13 @@ function About() {
 					/>
 					<h1 className="header">About Me!</h1>
 					<div className="row mt-4">
-						<div className="text col-md-7">
+						<motion.div
+							className="text col-md-7"
+							initial={{ translateX: 250 }}
+							whileInView={{ translateX: 0 }}
+							transition={{ type: "spring", bounce: 0.4 }}
+							viewport={{ once: true }}
+						>
 							Hey, I’m Judah Oyedele — a{" "}
 							<b>frontend developer and UI/UX designer</b> with
 							over <b>5 years of experience</b> crafting web
@@ -74,7 +105,7 @@ function About() {
 								<img src="/Icons/download.svg" />
 								Download Resume
 							</button>
-						</div>
+						</motion.div>
 						<img
 							src="/Images/Profile.png"
 							alt="Image"
@@ -97,18 +128,26 @@ function About() {
 					className="section-highlight"
 				/>
 				<h1>What I Use</h1>
-				<div className="row">
+				<motion.div
+					className="row"
+					initial="hidden"
+					whileInView="show"
+					variants={container}
+					viewport={{ once: "true" }}
+				>
 					{skills.map((skill, index) => {
 						return (
-							<img
+							<motion.img
 								key={index}
-                                className="col-md-2"
+								className="col-md-2"
 								src={`/Icons/Skills/${skill}.svg`}
 								alt={skill}
+								variants={item}
+								whileHover={item.hover}
 							/>
 						);
 					})}
-				</div>
+				</motion.div>
 			</div>
 		</>
 	);

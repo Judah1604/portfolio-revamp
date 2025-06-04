@@ -8,11 +8,14 @@
   color: white;
   text-decoration: none;
 }
+.about span {
+  position: relative;
+}
 .about .highlight {
   position: absolute;
   width: 95px;
-  right: 30%;
-  bottom: -3px;
+  bottom: -10px;
+  left: 0;
 }
 .about .glow1 {
   top: -250px;
@@ -60,6 +63,7 @@
   padding-left: 40px;
   padding-right: 40px;
   line-height: 1.7;
+  z-index: -1;
 }
 .info .row .text b {
   font-weight: 600;
@@ -84,8 +88,4 @@
 .what-i-use .row img {
   width: 70px;
   cursor: pointer;
-  transition: 0.3s ease;
-}
-.what-i-use .row img:hover {
-  transform: scale(1.2);
 }/*# sourceMappingURL=about.css.map */

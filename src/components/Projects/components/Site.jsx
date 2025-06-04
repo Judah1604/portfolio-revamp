@@ -1,8 +1,14 @@
-import React from "react";
+import { motion } from "motion/react";
 
 function Site({ name, image, langs, codeLink, viewLink }) {
 	return (
-		<div className="site">
+		<motion.div
+			className="site"
+			initial={{ translateY: 70 }}
+			whileInView={{ translateY: 0 }}
+			transition={{ type: "spring", bounce: 0.4, delay: 0.2 }}
+			viewport={{ once: "true" }}
+		>
 			<img
 				src={`/Images/DisplayImgs/Dev/${image}.png`}
 				alt={name}
@@ -23,12 +29,16 @@ function Site({ name, image, langs, codeLink, viewLink }) {
 					<img src="/Icons/code-btn.svg" alt="code" />
 					View Code
 				</a>
-				<a className="btn btn-fill link" href={viewLink} target="_blank">
+				<a
+					className="btn btn-fill link"
+					href={viewLink}
+					target="_blank"
+				>
 					<img src="/Icons/arrow-up-right.svg" alt="link" />
 					Visit Live Site
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

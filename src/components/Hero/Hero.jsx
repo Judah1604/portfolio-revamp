@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Nav from "../Nav/Nav";
 import "./hero.css";
 
@@ -9,18 +10,34 @@ function Hero() {
 
 			<div className="hero">
 				<div className="text container text-center">
-					<h1>
+					<motion.h1
+						initial={{ translateY: 150 }}
+						whileInView={{ translateY: 0 }}
+						transition={{ type: "spring", delay: 0.2, bounce: 0.3 }}
+						viewport={{ once: true }}
+					>
 						Design. <span className="blue">Code.</span>{" "}
 						<span className="yellow">Elevate.</span>
-					</h1>
-					<p>
+					</motion.h1>
+					<motion.p
+						initial={{ translateY: 120 }}
+						whileInView={{ translateY: 0 }}
+						transition={{ type: "spring", delay: 0.3 }}
+						viewport={{ once: true }}
+					>
 						Frontend dev + UI/UX designer building sleek, responsive
 						web experiences.
-					</p>
-					<button className="btn btn-blue icon-left">
+					</motion.p>
+					<motion.button
+						className="btn btn-blue"
+						initial={{ translateY: 140 }}
+						whileInView={{ translateY: 0 }}
+						transition={{ type: "spring", delay: 0.4 }}
+						viewport={{ once: true }}
+					>
 						<img src="/Icons/download.svg" />
 						Download Resume
-					</button>
+					</motion.button>
 				</div>
 			</div>
 			<img src="/Effects/Moon.png" className="moon" />

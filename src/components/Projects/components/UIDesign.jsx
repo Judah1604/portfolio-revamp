@@ -1,8 +1,14 @@
-import React from "react";
+import { motion } from "motion/react";
 
 function UIDesign({ name, tags, viewLink }) {
 	return (
-		<div className="design">
+		<motion.div
+			className="design"
+			initial={{ translateY: 70 }}
+			whileInView={{ translateY: 0 }}
+			transition={{ type: "spring", bounce: 0.4, delay: 0.2 }}
+			viewport={{ once: "true" }}
+		>
 			<img
 				className="header-img"
 				src={`/Images/DisplayImgs/Design/${name.toLowerCase()}.png`}
@@ -18,7 +24,7 @@ function UIDesign({ name, tags, viewLink }) {
 					Visit Design Link
 				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

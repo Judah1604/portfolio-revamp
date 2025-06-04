@@ -1,22 +1,46 @@
 import "./nav.css";
+import { motion } from "motion/react";
 
 function Nav() {
 	return (
 		<>
-			
 			<nav className="navbar">
 				<div className="container">
-					<a href="/" className="navbar-brand">
+					<motion.a
+						href="/"
+						className="navbar-brand"
+						initial={{ translateY: -70 }}
+						whileInView={{ translateY: 0 }}
+					>
 						<img src="/wordmark.png" alt="Aurora" />
-					</a>
+					</motion.a>
 					<div className="navlinks">
-						<a href="#services">Services</a>
-						<a href="#projects">Projects</a>
+						<motion.a
+							href="#services"
+							initial={{ translateY: -60 }}
+							whileInView={{ translateY: 0 }}
+							transition={{ delay: 0.2 }}
+						>
+							Services
+						</motion.a>
+						<motion.a
+							href="#projects"
+							initial={{ translateY: -60 }}
+							whileInView={{ translateY: 0 }}
+							transition={{ delay: 0.3 }}
+						>
+							Projects
+						</motion.a>
 					</div>
-					<button className="btn btn-blue icon-left">
+					<motion.button
+						className="btn btn-blue icon-left"
+						initial={{ translateY: -80 }}
+						whileInView={{ translateY: 0 }}
+						transition={{ delay: 0.4 }}
+					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
-					</button>
+					</motion.button>
 				</div>
 			</nav>
 		</>
