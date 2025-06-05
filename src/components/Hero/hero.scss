@@ -63,6 +63,7 @@
     animation: bg-pan 50s linear infinite;
     border-bottom-left-radius: 350px;
     border-bottom-right-radius: 350px;
+    filter: brightness(1.2);
 }
 
 @keyframes bg-pan {

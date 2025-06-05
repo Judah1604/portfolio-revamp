@@ -34,15 +34,22 @@ function Hero() {
 						whileInView={{ translateY: 0 }}
 						transition={{ type: "spring", delay: 0.4 }}
 						viewport={{ once: true }}
-                        href="/Judah Oyedele's Resume.pdf"
-                        download
+						href="/Judah Oyedele's Resume.pdf"
+						download
 					>
 						<img src="/Icons/download.svg" />
 						Download Resume
 					</motion.a>
 				</div>
 			</div>
-			<img src="/Effects/Moon.png" className="moon" />
+			<img
+				src={
+					window.innerWidth <= 430
+						? "/Effects/Moon_mobile.png"
+						: "/Effects/Moon.png"
+				}
+				className="moon"
+			/>
 		</>
 	);
 }

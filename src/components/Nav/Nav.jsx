@@ -1,7 +1,11 @@
+import { useState } from "react";
+import Socials from "../Contact/Socials";
 import "./nav.css";
 import { motion } from "motion/react";
+import { tr } from "motion/react-client";
 
 function Nav() {
+	const [isActive, setIsActive] = useState(false);
 	return (
 		<>
 			<nav className="navbar">
@@ -9,8 +13,9 @@ function Nav() {
 					<motion.a
 						href="/"
 						className="navbar-brand"
-						initial={{ translateY: -70 }}
+						initial={{ translateY: -60 }}
 						whileInView={{ translateY: 0 }}
+						transition={{ type: "spring", bounce: 0.4 }}
 					>
 						<img src="/wordmark.png" alt="Aurora" />
 					</motion.a>
@@ -20,6 +25,7 @@ function Nav() {
 							initial={{ translateY: -60 }}
 							whileInView={{ translateY: 0 }}
 							transition={{ delay: 0.2 }}
+							viewport={{ once: true }}
 						>
 							Services
 						</motion.a>
@@ -28,23 +34,71 @@ function Nav() {
 							initial={{ translateY: -60 }}
 							whileInView={{ translateY: 0 }}
 							transition={{ delay: 0.3 }}
+							viewport={{ once: true }}
 						>
 							Projects
 						</motion.a>
 					</div>
-					<motion.a
+					<motion.button
 						className="btn btn-blue icon-left"
-						initial={{ translateY: -80 }}
+						initial={{ translateY: -60 }}
 						whileInView={{ translateY: 0 }}
 						transition={{ delay: 0.4 }}
-						href="/Judah Oyedele's Resume.pdf"
-						download
+						viewport={{ once: true }}
+						href="#contact-form"
 					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
-					</motion.a>
+					</motion.button>
+					<motion.div
+						className={isActive ? "menu-icon active" : "menu-icon"}
+						initial={{ translateY: -40 }}
+						whileInView={{ translateY: 0 }}
+						transition={{ type: "spring", bounce: 0.4 }}
+						onClick={() => setIsActive(!isActive)}
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</motion.div>
 				</div>
 			</nav>
+			<div className={isActive ? "nav-menu active" : "nav-menu"}>
+				<div className="column">
+					<div className="navlinks">
+						<motion.a
+							href="#services"
+							initial={{ translateX: -100 }}
+							whileInView={{ translateX: 0 }}
+							transition={{ delay: 0.2 }}
+							viewport={{ once: true }}
+						>
+							Services
+						</motion.a>
+						<motion.a
+							href="#projects"
+							initial={{ translateX: -100 }}
+							whileInView={{ translateX: 0 }}
+							transition={{ delay: 0.3 }}
+							viewport={{ once: true }}
+						>
+							Projects
+						</motion.a>
+					</div>
+					<motion.button
+						className="btn btn-blue icon-left"
+						initial={{ translateX: -100 }}
+						whileInView={{ translateX: 0 }}
+						transition={{ delay: 0.4 }}
+						viewport={{ once: true }}
+						href="#contact-form"
+					>
+						<img src="/Icons/send.svg" alt="send" />
+						Work With Me
+					</motion.button>
+				</div>
+				<Socials />
+			</div>
 		</>
 	);
 }
