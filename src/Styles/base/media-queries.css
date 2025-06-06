@@ -55,11 +55,11 @@
     transform: none !important;
   }
   .stars {
-    height: unset !important;
+    height: 70vh !important;
     background-size: 250% 250% !important;
   }
   .moon {
-    bottom: 0px !important;
+    bottom: 40px !important;
   }
   .hero .text {
     margin-top: 50px !important;
