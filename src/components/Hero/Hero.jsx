@@ -41,15 +41,15 @@ function Hero() {
 						Download Resume
 					</motion.a>
 				</div>
+				<img
+					src={
+						window.innerWidth <= 430
+							? "/Effects/Moon_mobile.png"
+							: "/Effects/Moon.png"
+					}
+					className="moon"
+				/>
 			</div>
-			<img
-				src={
-					window.innerWidth <= 430
-						? "/Effects/Moon_mobile.png"
-						: "/Effects/Moon.png"
-				}
-				className="moon"
-			/>
 		</>
 	);
 }
