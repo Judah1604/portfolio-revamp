@@ -63,6 +63,13 @@ function Contact() {
 						<label htmlFor="message">MESSAGE(OPTIONAL)</label>
 					</div>
 				</div>
+				<button
+					className="btn btn-blue icon-left"
+					type="submit"
+				>
+					<img src="/Icons/send.svg" alt="send" />
+					Shoot
+				</button>
 			</motion.form>
 			<div className="socials text-center">
 				<h2>Reach me here too!</h2>

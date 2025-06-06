@@ -62,4 +62,8 @@
 }
 .contact form .form-row > * {
   width: 100%;
+}
+.contact form .btn {
+  margin: auto;
+  margin-top: 20px;
 }/*# sourceMappingURL=contact.css.map */

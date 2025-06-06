@@ -39,7 +39,7 @@ function Nav() {
 							Projects
 						</motion.a>
 					</div>
-					<motion.button
+					<motion.a
 						className="btn btn-blue icon-left"
 						initial={{ translateY: -50 }}
 						whileInView={{ translateY: 0 }}
@@ -49,7 +49,7 @@ function Nav() {
 					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
-					</motion.button>
+					</motion.a>
 					<motion.div
 						className={isActive ? "menu-icon active" : "menu-icon"}
 						initial={{ translateY: -40 }}
@@ -85,7 +85,7 @@ function Nav() {
 							Projects
 						</motion.a>
 					</div>
-					<motion.button
+					<motion.a
 						className="btn btn-blue icon-left"
 						initial={{ translateX: -100 }}
 						whileInView={{ translateX: 0 }}
@@ -95,7 +95,7 @@ function Nav() {
 					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
-					</motion.button>
+					</motion.a>
 				</div>
 				<Socials />
 			</div>
