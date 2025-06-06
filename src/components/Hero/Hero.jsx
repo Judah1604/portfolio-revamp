@@ -4,9 +4,9 @@ import "./hero.css";
 
 function Hero() {
 	return (
-		<>
+		<div className="hero-wrapper">
+        <div className="stars"></div>
 			<Nav />
-			<div className="stars"></div>
 
 			<div className="hero">
 				<div className="text container text-center">
@@ -41,16 +41,16 @@ function Hero() {
 						Download Resume
 					</motion.a>
 				</div>
-				<img
-					src={
-						window.innerWidth <= 430
-							? "/Effects/Moon_mobile.png"
-							: "/Effects/Moon.png"
-					}
-					className="moon"
-				/>
 			</div>
-		</>
+			<img
+				src={
+					window.innerWidth <= 430
+						? "/Effects/Moon_mobile.png"
+						: "/Effects/Moon.png"
+				}
+				className="moon"
+			/>
+		</div>
 	);
 }
 

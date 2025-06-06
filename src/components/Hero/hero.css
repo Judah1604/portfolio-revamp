@@ -38,6 +38,10 @@
   transform: none;
 }
 
+.hero-wrapper {
+  position: relative;
+}
+
 .moon {
   position: absolute;
   width: 100%;

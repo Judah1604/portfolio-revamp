@@ -22,7 +22,7 @@ function Nav() {
 					<div className="navlinks">
 						<motion.a
 							href="#services"
-							initial={{ translateY: -60 }}
+							initial={{ translateY: -30 }}
 							whileInView={{ translateY: 0 }}
 							transition={{ delay: 0.2 }}
 							viewport={{ once: true }}
@@ -31,7 +31,7 @@ function Nav() {
 						</motion.a>
 						<motion.a
 							href="#projects"
-							initial={{ translateY: -60 }}
+							initial={{ translateY: -30 }}
 							whileInView={{ translateY: 0 }}
 							transition={{ delay: 0.3 }}
 							viewport={{ once: true }}
@@ -41,7 +41,7 @@ function Nav() {
 					</div>
 					<motion.button
 						className="btn btn-blue icon-left"
-						initial={{ translateY: -60 }}
+						initial={{ translateY: -50 }}
 						whileInView={{ translateY: 0 }}
 						transition={{ delay: 0.4 }}
 						viewport={{ once: true }}
