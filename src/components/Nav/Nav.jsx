@@ -63,7 +63,7 @@ function Nav() {
 					</motion.div>
 				</div>
 			</nav>
-			<div className={isActive ? "nav-menu active" : "nav-menu"}>
+			<div className={isActive ? "nav-menu active fadeIn" : "nav-menu fadeOut"}>
 				<div className="column">
 					<div className="navlinks">
 						<motion.a
