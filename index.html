@@ -1,13 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Judah Oyedele's Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Judah Oyedele's Portfolio</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<form name="Contact Form" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" name="Full Name" />
+			<input type="email" name="Email" />
+			<input type="number" name="Phone Number" />
+			<textarea name="Message"></textarea>
+		</form>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>

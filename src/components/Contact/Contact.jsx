@@ -7,20 +7,28 @@ function Contact() {
 	return (
 		<div className="contact container">
 			<motion.form
-				action="#"
-                id="contact-form"
+				id="contact-form"
 				initial={{ translateY: 70 }}
 				whileInView={{ translateY: 0 }}
 				transition={{ type: "spring", bounce: 0.4, delay: 0.2 }}
+				name="Contact Form"
+				method="POST"
+				data-netlify="true"
 			>
 				<h1>Let's work together!</h1>
 				<div className="fields">
+					<input
+						type="hidden"
+						name="form-name"
+						value="Contact Form"
+					/>
 					<div className="form-row">
 						<div className="form-group">
 							<input
 								type="text"
 								id="name"
 								className="form-control"
+								name="Full Name"
 								required
 							/>
 							<label htmlFor="name">FULL NAME*</label>
@@ -30,6 +38,7 @@ function Contact() {
 								type="email"
 								id="email"
 								className="form-control"
+								name="Email address"
 								required
 							/>
 							<label htmlFor="email">EMAIL*</label>
@@ -40,6 +49,7 @@ function Contact() {
 							type="number"
 							id="phone"
 							className="form-control"
+							name="Phone Number"
 						/>
 						<label htmlFor="phone">PHONE NUMBER(OPTIONAL)</label>
 					</div>
@@ -48,6 +58,7 @@ function Contact() {
 							type="text"
 							id="message"
 							className="form-control"
+							name="Message"
 						/>
 						<label htmlFor="message">MESSAGE(OPTIONAL)</label>
 					</div>
