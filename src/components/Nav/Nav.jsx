@@ -92,6 +92,7 @@ function Nav() {
 						transition={{ delay: 0.4 }}
 						viewport={{ once: true }}
 						href="#contact-form"
+                        onClick={() => setIsActive(false)}
 					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
