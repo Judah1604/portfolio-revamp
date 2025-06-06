@@ -59,7 +59,7 @@
     background-size: 250% 250% !important;
   }
   .moon {
-    bottom: 40px !important;
+    bottom: -40px !important;
   }
   .hero .text {
     margin-top: 50px !important;
