@@ -63,7 +63,11 @@ function Nav() {
 					</motion.div>
 				</div>
 			</nav>
-			<div className={isActive ? "nav-menu active fadeIn" : "nav-menu fadeOut"}>
+			<div
+				className={
+					isActive ? "nav-menu active fadeIn" : "nav-menu fadeOut"
+				}
+			>
 				<div className="column">
 					<div className="navlinks">
 						<motion.a
@@ -72,6 +76,7 @@ function Nav() {
 							whileInView={{ translateX: 0 }}
 							transition={{ delay: 0.2 }}
 							viewport={{ once: true }}
+							onClick={() => setIsActive(false)}
 						>
 							Services
 						</motion.a>
@@ -81,6 +86,7 @@ function Nav() {
 							whileInView={{ translateX: 0 }}
 							transition={{ delay: 0.3 }}
 							viewport={{ once: true }}
+							onClick={() => setIsActive(false)}
 						>
 							Projects
 						</motion.a>
@@ -92,7 +98,7 @@ function Nav() {
 						transition={{ delay: 0.4 }}
 						viewport={{ once: true }}
 						href="#contact-form"
-                        onClick={() => setIsActive(false)}
+						onClick={() => setIsActive(false)}
 					>
 						<img src="/Icons/send.svg" alt="send" />
 						Work With Me
