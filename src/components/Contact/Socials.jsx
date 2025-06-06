@@ -35,7 +35,7 @@ function Socials() {
 				variants={item}
 				whileHover={item.hover}
 			>
-				<a href="mailto:someone@example.com">
+				<a href="mailto:developwithaurora@gmail.com">
 					<img src="/Icons/Socials/mail.svg" alt="mail" />
 				</a>
 			</motion.div>
