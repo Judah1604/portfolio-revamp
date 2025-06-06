@@ -55,9 +55,10 @@ nav {
     width: 100%;
     height: 100vh;
     padding-top: 130px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-color: rgba($color: #000000, $alpha: 0.5);
     backdrop-filter: blur(8px);
+    z-index: 900;
 
     &.active {
         display: flex !important;
