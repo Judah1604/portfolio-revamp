@@ -5,7 +5,7 @@ import "./hero.css";
 function Hero() {
 	return (
 		<div className="hero-wrapper">
-        <div className="stars"></div>
+			<div className="stars"></div>
 			<Nav />
 
 			<div className="hero">
@@ -25,8 +25,8 @@ function Hero() {
 						transition={{ type: "spring", delay: 0.3 }}
 						viewport={{ once: true }}
 					>
-						Frontend dev + UI/UX designer building sleek, responsive
-						web experiences.
+						<b>Frontend dev + UI/UX designer</b> building sleek,
+						responsive web experiences.
 					</motion.p>
 					<motion.a
 						className="btn btn-blue"
