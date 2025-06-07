@@ -71,7 +71,7 @@ function Socials() {
 				variants={item}
 				whileHover={item.hover}
 			>
-				<a href="https://linkedin/in/judah-oyedele">
+				<a href="https://linkedin.com/in/judah-oyedele">
 					<img src="/Icons/Socials/linkedin.svg" alt="mail" />
 				</a>
 			</motion.div>
