@@ -1,5 +1,6 @@
 .hero {
     position: relative;
+
     .text {
         margin-top: 80px;
         overflow: hidden;
@@ -44,6 +45,35 @@
 
     b {
         font-weight: 500;
+    }
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: translate(-50%, 20px);
+
+        & img {
+            filter: brightness(1);
+        }
+    }
+
+    img {
+        width: 20px;
+        filter: brightness(0.7);
+        transition: 0.3s ease;
     }
 }
 

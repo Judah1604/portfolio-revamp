@@ -40,7 +40,7 @@ function About() {
 
 	return (
 		<>
-			<div className="about text-center">
+			<div className="about text-center" id="about">
 				<div className="intro container">
 					<img
 						src="/Effects/Star.png"

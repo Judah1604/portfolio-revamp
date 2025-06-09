@@ -42,6 +42,7 @@ function Hero() {
 					</motion.a>
 				</div>
 			</div>
+
 			<img
 				src={
 					window.innerWidth <= 430
@@ -50,6 +51,9 @@ function Hero() {
 				}
 				className="moon"
 			/>
+			<a className="scroll" href="#about">
+				<img src="/Icons/scrolldown.svg" alt="Scroll Down" />
+			</a>
 		</div>
 	);
 }
