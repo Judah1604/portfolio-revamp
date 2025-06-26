@@ -1,5 +1,5 @@
 * {
-    // overflow-x: hidden;
+    overflow-x: clip;
     margin: 0;
 }
 
@@ -90,9 +90,9 @@ body {
     }
 }
 
-.btn.btn-fill {
-    color: #030209;
-    background: white;
+.btn.btn-outline {
+    color: white;
+    background: transparent;
     padding: 12px 40px;
     border: 2px solid white;
     font-weight: 500;
@@ -109,6 +109,10 @@ body {
     &:hover {
         background-color: white;
         color: #030209;
+
+        img {
+            filter: brightness(0);
+        }
     }
 }
 

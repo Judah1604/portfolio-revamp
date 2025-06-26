@@ -1,4 +1,5 @@
 * {
+  overflow-x: clip;
   margin: 0;
 }
 
@@ -86,9 +87,9 @@ body {
   color: #030209;
 }
 
-.btn.btn-fill {
-  color: #030209;
-  background: white;
+.btn.btn-outline {
+  color: white;
+  background: transparent;
   padding: 12px 40px;
   border: 2px solid white;
   font-weight: 500;
@@ -98,12 +99,15 @@ body {
   align-items: center;
   gap: 10px;
 }
-.btn.btn-fill img {
+.btn.btn-outline img {
   width: 20px;
 }
-.btn.btn-fill:hover {
+.btn.btn-outline:hover {
   background-color: white;
   color: #030209;
+}
+.btn.btn-outline:hover img {
+  filter: brightness(0);
 }
 
 .socials {

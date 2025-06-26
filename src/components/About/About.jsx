@@ -87,7 +87,7 @@ function About() {
 						>
 							Hey, I’m Judah Oyedele — a{" "}
 							<b>frontend developer and UI/UX designer</b> with
-							over <b>5 years of experience</b> crafting web
+							over <b>4 years of experience</b> crafting web
 							experiences that not only <b>look good,</b> but{" "}
 							<b>convert</b>. I prioritize conversion in my
 							designs because beauty and results are both crucial
