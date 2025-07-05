@@ -11,7 +11,7 @@ function UIDesigns({ projectState }) {
 
 	const designs = [
 		{
-			name: "30DayUIDesignChallenge",
+			name: "DesignChallenge",
 			tags: ["Design"],
 			viewLink:
 				"https://www.figma.com/design/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?node-id=75-4&t=e5nDr0KqKuEU7b4x-1",

@@ -72,7 +72,7 @@ function Nav() {
 					<div className="navlinks">
 						<motion.a
 							href="#services"
-							initial={{ translateX: -30 }}
+							initial={{ translateX: -40 }}
 							whileInView={{ translateX: 0 }}
 							transition={{ delay: 0.2 }}
 							viewport={{ once: true }}
@@ -82,7 +82,7 @@ function Nav() {
 						</motion.a>
 						<motion.a
 							href="#projects"
-							initial={{ translateX: -30 }}
+							initial={{ translateX: -40 }}
 							whileInView={{ translateX: 0 }}
 							transition={{ delay: 0.3 }}
 							viewport={{ once: true }}

@@ -63,13 +63,14 @@ const LightboxCarousel = ({
 						onClick={closeCarousel}
 						aria-label="Close"
 					>
-						<img src="/icons/close.svg" alt="Close" />
+						<img src="/Icons/close.svg" alt="Close" />
 					</button>
 
 					<img
 						src={`/Images/Designs/${folderName}/${images[currentIndex]}.png`}
 						alt={`Design image ${currentIndex + 1}`}
 						className="lightbox-image"
+						loading="eager"
 					/>
 
 					<button
@@ -98,6 +99,7 @@ const LightboxCarousel = ({
 									index === currentIndex ? "active" : ""
 								}`}
 								onClick={() => setCurrentIndex(index)}
+								loading="lazy"
 								role="button"
 							/>
 						))}
