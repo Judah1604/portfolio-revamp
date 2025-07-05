@@ -63,7 +63,7 @@ const LightboxCarousel = ({
 						onClick={closeCarousel}
 						aria-label="Close"
 					>
-						<img src="/Icons/close.svg" alt="Close" />
+						<img src="/Icons/x.svg" alt="Close" />
 					</button>
 
 					<img
