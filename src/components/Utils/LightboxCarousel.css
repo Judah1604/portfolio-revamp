@@ -1,0 +1,129 @@
+/* Overlay */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Content */
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: visible;
+  text-align: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Close Button */
+.lightbox-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lightbox-close img {
+  width: 30px;
+  filter: brightness(0);
+}
+
+/* Navigation */
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  z-index: 10;
+}
+
+.lightbox-nav.left {
+  left: -60px;
+}
+
+.lightbox-nav.right {
+  right: -60px;
+}
+
+.lightbox-nav:hover {
+  color: #ddd;
+}
+
+/* Thumbnails */
+.lightbox-thumbnails {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumb {
+  width: 60px;
+  height: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 4px;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.thumb.active {
+  border-color: #fff;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 768px) {
+  .lightbox-image {
+    max-height: 50vh;
+  }
+  .lightbox-nav {
+    font-size: 30px;
+  }
+  .lightbox-nav.left {
+    left: 10px;
+  }
+  .lightbox-nav.right {
+    right: 10px;
+  }
+  .thumb {
+    width: 50px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=LightboxCarousel.css.map */

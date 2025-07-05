@@ -107,7 +107,7 @@
     transform: translate(0, 55%) !important;
   }
   .projects .site .langs,
-  .projects .site .btns {
+  .projects .site .btns, .projects .design .btns {
     flex-direction: column;
   }
   .projects .site .btns {

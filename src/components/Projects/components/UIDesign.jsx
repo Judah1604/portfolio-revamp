@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-function UIDesign({ name, tags, viewLink }) {
+function UIDesign({ name, tags, viewLink, openCarousel }) {
 	return (
 		<motion.div
 			className="design"
@@ -19,7 +19,11 @@ function UIDesign({ name, tags, viewLink }) {
 				<div className="tags">{tags.join("  |  ")}</div>
 			</div>
 			<div className="btns">
-				<a className="btn btn-blue" href={viewLink}>
+				<button className="btn btn-fill pages" onClick={openCarousel}>
+					<img src="/Icons/grid.svg" alt="Open Pages" />
+					View Pages
+				</button>
+				<a className="btn btn-blue" href={viewLink} target="_blank">
 					<img src="/Icons/arrow-up-right.svg" alt="link" />
 					Visit Design Link
 				</a>

@@ -10,10 +10,11 @@ function App() {
 	return (
 		<>
 			<Hero />
-            <About />
-            <Projects />
-            <Contact />
-            <div className="underglow"></div>
+			<About />
+			<Projects />
+			<Contact />
+
+			<div className="underglow"></div>
 		</>
 	);
 }
