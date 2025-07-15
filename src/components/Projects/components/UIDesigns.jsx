@@ -11,6 +11,14 @@ function UIDesigns({ projectState }) {
 
 	const designs = [
 		{
+			name: "Chopwise",
+			tags: ["Onboarding", 'Food'],
+			viewLink:
+				"https://www.figma.com/design/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?node-id=75-4&t=e5nDr0KqKuEU7b4x-1",
+			folder: "chopwise",
+			imgNumber: 6,
+		},
+		{
 			name: "DesignChallenge",
 			tags: ["Design"],
 			viewLink:
