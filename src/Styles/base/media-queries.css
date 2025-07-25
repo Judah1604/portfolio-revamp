@@ -50,6 +50,12 @@
   }
 }
 @media (max-width: 430px) {
+  .section-highlight {
+    width: 60px;
+  }
+  h1.header {
+    font-size: 2.5em;
+  }
   .navbar-brand,
   .menu-icon {
     transform: none !important;
@@ -110,7 +116,8 @@
     transform: translate(0, 55%) !important;
   }
   .projects .site .langs,
-  .projects .site .btns, .projects .design .btns {
+  .projects .site .btns,
+  .projects .design .btns {
     flex-direction: column;
   }
   .projects .site .btns {
@@ -137,6 +144,12 @@
   }
 }
 @media (max-width: 380px) {
+  .projects .design .title,
+  .projects .site .title {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 5px;
+  }
   .hero .text h1 {
     font-size: 2.5em !important;
   }
