@@ -54,7 +54,7 @@
     width: 60px;
   }
   h1.header {
-    font-size: 2.5em;
+    font-size: 2em !important;
   }
   .navbar-brand,
   .menu-icon {
@@ -134,9 +134,6 @@
   }
   .contact form .form-row {
     flex-direction: column;
-  }
-  .info .header {
-    font-size: 2.5em !important;
   }
   .socials .link {
     width: -moz-fit-content;
