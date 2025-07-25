@@ -70,6 +70,17 @@
   width: 100%;
   border-radius: 15px;
   border: 1px solid #3b3b3b;
+  position: relative;
+  cursor: pointer;
+}
+.projects .design .header-img:hover .overlay,
+.projects .site .header-img:hover .overlay {
+  opacity: 1;
+}
+.projects .design .header-img > img,
+.projects .site .header-img > img {
+  border-radius: 15px;
+  width: 100%;
 }
 .projects .design .title,
 .projects .site .title {
@@ -118,6 +129,33 @@
 }
 .projects .design .btn-blue img {
   margin-right: 4px;
+}
+.projects .design .overlay {
+  position: absolute;
+  transition: 0.3s ease;
+  opacity: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.projects .design .overlay a {
+  text-decoration: none;
+  color: white;
+}
+.projects .design .overlay a:hover {
+  text-decoration: underline;
+}
+.projects .design .overlay img {
+  width: 30px;
+  margin-left: 10px;
 }
 .projects .site {
   width: 700px;

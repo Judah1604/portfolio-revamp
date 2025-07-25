@@ -12,19 +12,23 @@ function UIDesigns({ projectState }) {
 	const designs = [
 		{
 			name: "VOCO",
-			tags: ["Onboarding", 'Language Learning'],
+			tags: ["Onboarding", "Language Learning"],
 			viewLink:
 				"https://www.figma.com/design/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?node-id=75-4&t=e5nDr0KqKuEU7b4x-1",
 			folder: "VOCO",
 			imgNumber: 8,
+			prototype:
+				"https://www.figma.com/proto/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?page-id=0%3A1&node-id=358-465&viewport=-7954%2C-3521%2C1&t=3fYGXHAfkQ8t6Lke-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2",
 		},
 		{
 			name: "Chopwise",
-			tags: ["Onboarding", 'Food'],
+			tags: ["Onboarding", "Food"],
 			viewLink:
 				"https://www.figma.com/design/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?node-id=75-4&t=e5nDr0KqKuEU7b4x-1",
 			folder: "chopwise",
 			imgNumber: 6,
+			prototype:
+				"https://www.figma.com/proto/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?page-id=0%3A1&node-id=222-2&viewport=-7954%2C-3521%2C1&t=3fYGXHAfkQ8t6Lke-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=222%3A2&show-proto-sidebar=1",
 		},
 		{
 			name: "DesignChallenge",
@@ -98,6 +102,7 @@ function UIDesigns({ projectState }) {
 					tags={design.tags}
 					viewLink={design.viewLink}
 					openCarousel={() => openCarousel(design)}
+					prototype={design.prototype}
 				/>
 			))}
 

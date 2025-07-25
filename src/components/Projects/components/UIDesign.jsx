@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-function UIDesign({ name, tags, viewLink, openCarousel }) {
+function UIDesign({ name, tags, viewLink, openCarousel, prototype }) {
 	return (
 		<motion.div
 			className="design"
@@ -9,11 +9,20 @@ function UIDesign({ name, tags, viewLink, openCarousel }) {
 			transition={{ type: "spring", bounce: 0.4, delay: 0.2 }}
 			viewport={{ once: "true" }}
 		>
-			<img
-				className="header-img"
-				src={`/Images/DisplayImgs/Design/${name.toLowerCase()}.png`}
-				alt={name}
-			/>
+			<div className="header-img">
+				{prototype && (
+					<div className="overlay">
+						<a href={prototype} target="_blank">
+							View Prototype
+							<img src="/Icons/arrow-up-right.svg" alt="view" />
+						</a>
+					</div>
+				)}
+				<img
+					src={`/Images/DisplayImgs/Design/${name.toLowerCase()}.png`}
+					alt={name}
+				/>
+			</div>
 			<div className="title">
 				<h2>{name}</h2>
 				<div className="tags">{tags.join("  |  ")}</div>
