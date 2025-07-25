@@ -54,6 +54,9 @@
   .menu-icon {
     transform: none !important;
   }
+  nav .navbar-brand img {
+    height: 20px !important;
+  }
   .stars {
     height: 55vh !important;
     background-size: 250% 250% !important;
