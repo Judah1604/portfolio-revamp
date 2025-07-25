@@ -88,6 +88,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 .projects .design .title h2,
 .projects .site .title h2 {
