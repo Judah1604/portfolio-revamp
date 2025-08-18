@@ -76,7 +76,15 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 500px) {
+
+    .pill {
+        gap: 10px !important;
+
+        &>*{
+            width: 100%;
+        }
+    }
 
     .section-highlight {
         width: 60px;
@@ -141,25 +149,6 @@
     .projects {
         margin-bottom: 50px !important;
 
-        .toggle {
-            flex-direction: column;
-            gap: 20px !important;
-            width: 90% !important;
-
-            &>* {
-                width: 100%;
-            }
-
-            &::before {
-                width: 98% !important;
-                height: 45% !important;
-                transform: translate(0, -55%) !important;
-            }
-
-            &.dev::before {
-                transform: translate(0, 55%) !important;
-            }
-        }
     }
 
     .projects .site .langs,
@@ -213,19 +202,6 @@
     .contact form {
         padding: 40px 30px !important;
     }
-
-    .projects .toggle {
-        &::before {
-            height: 35% !important;
-            transform: translate(0, -85%) !important;
-        }
-
-        &.dev::before {
-            transform: translate(0, 35%) !important;
-            height: 55% !important;
-        }
-    }
-
     .info .text .btn {
         margin: 0;
         width: 100%;

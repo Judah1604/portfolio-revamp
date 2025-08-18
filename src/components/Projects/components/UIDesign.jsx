@@ -14,7 +14,6 @@ function UIDesign({ name, tags, viewLink, openCarousel, prototype }) {
 					<div className="overlay">
 						<a href={prototype} target="_blank">
 							View Prototype
-							<img src="/Icons/arrow-up-right.svg" alt="view" />
 						</a>
 					</div>
 				)}

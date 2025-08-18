@@ -14,19 +14,23 @@ function Projects() {
 				className="section-highlight"
 			/>
 			<h1 className="header">Projects</h1>
-			<div
-				className={
-					projectState === "ui/ux" ? "toggle mb-5" : "toggle dev mb-5"
-				}
-			>
+			<div className="pill">
 				<div
-					className="ui-toggle"
+					className={
+						projectState === "ui/ux"
+							? "ui-toggle active"
+							: "ui-toggle"
+					}
 					onClick={() => setProjectState("ui/ux")}
 				>
 					UI/UX Design
 				</div>
 				<div
-					className="dev-toggle"
+					className={
+						projectState === "web"
+							? "dev-toggle active"
+							: "dev-toggle"
+					}
 					onClick={() => setProjectState("web")}
 				>
 					Frontend Web Development
@@ -35,7 +39,11 @@ function Projects() {
 			<img className="glow1" src="/Effects/Star_1.png" alt="Glow" />
 			<img className="glow2" src="/Effects/Star_2.png" alt="Glow" />
 			<div className="wrapper">
-				{projectState === "ui/ux" ? <UIDesigns projectState={projectState} /> : <FRDev projectState={projectState} />}
+				{projectState === "ui/ux" ? (
+					<UIDesigns projectState={projectState} />
+				) : (
+					<FRDev projectState={projectState} />
+				)}
 			</div>
 		</div>
 	);

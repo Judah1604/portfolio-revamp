@@ -49,7 +49,13 @@
     width: 90% !important;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 500px) {
+  .pill {
+    gap: 10px !important;
+  }
+  .pill > * {
+    width: 100%;
+  }
   .section-highlight {
     width: 60px;
   }
@@ -99,22 +105,6 @@
   .projects {
     margin-bottom: 50px !important;
   }
-  .projects .toggle {
-    flex-direction: column;
-    gap: 20px !important;
-    width: 90% !important;
-  }
-  .projects .toggle > * {
-    width: 100%;
-  }
-  .projects .toggle::before {
-    width: 98% !important;
-    height: 45% !important;
-    transform: translate(0, -55%) !important;
-  }
-  .projects .toggle.dev::before {
-    transform: translate(0, 55%) !important;
-  }
   .projects .site .langs,
   .projects .site .btns,
   .projects .design .btns {
@@ -152,14 +142,6 @@
   }
   .contact form {
     padding: 40px 30px !important;
-  }
-  .projects .toggle::before {
-    height: 35% !important;
-    transform: translate(0, -85%) !important;
-  }
-  .projects .toggle.dev::before {
-    transform: translate(0, 35%) !important;
-    height: 55% !important;
   }
   .info .text .btn {
     margin: 0;
