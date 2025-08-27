@@ -53,7 +53,7 @@ function Socials() {
 				variants={item}
 				whileHover={item.hover}
 			>
-				<a href="https://x.com/JudahOyedele">
+				<a href="https://x.com/CraftedByAurora">
 					<img src="/Icons/Socials/twitter.svg" alt="mail" />
 				</a>
 			</motion.div>
