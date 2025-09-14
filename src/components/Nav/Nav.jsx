@@ -10,15 +10,9 @@ function Nav() {
 		<>
 			<nav className="navbar">
 				<div className="container">
-					<motion.a
-						href="/"
-						className="navbar-brand"
-						initial={{ translateY: -60 }}
-						whileInView={{ translateY: 0 }}
-						transition={{ type: "spring", bounce: 0.4 }}
-					>
+					<a href="/" className="navbar-brand">
 						<img src="/wordmark.png" alt="Aurora" />
-					</motion.a>
+					</a>
 					<div className="navlinks">
 						<motion.a
 							href="#services"
@@ -39,17 +33,10 @@ function Nav() {
 							Projects
 						</motion.a>
 					</div>
-					<motion.a
-						className="btn btn-blue icon-left"
-						initial={{ translateY: -50 }}
-						whileInView={{ translateY: 0 }}
-						transition={{ delay: 0.4 }}
-						viewport={{ once: true }}
-						href="#contact-form"
-					>
-						<img src="/Icons/send.svg" alt="send" />
-						Work With Me
-					</motion.a>
+					<a className="btn btn-blue icon-left" href="#contact-form">
+						<i class="fa-regular fa-comments"></i>
+						Let's Chat
+					</a>
 					<motion.div
 						className={isActive ? "menu-icon active" : "menu-icon"}
 						initial={{ translateY: -40 }}
@@ -91,18 +78,10 @@ function Nav() {
 							Projects
 						</motion.a>
 					</div>
-					<motion.a
-						className="btn btn-blue icon-left"
-						initial={{ translateX: -100 }}
-						whileInView={{ translateX: 0 }}
-						transition={{ delay: 0.4 }}
-						viewport={{ once: true }}
-						href="#contact-form"
-						onClick={() => setIsActive(false)}
-					>
-						<img src="/Icons/send.svg" alt="send" />
-						Work With Me
-					</motion.a>
+					<a className="btn btn-blue icon-left" href="#contact-form">
+						<i class="fa-regular fa-comments"></i>
+						Let's Chat
+					</a>
 				</div>
 				<Socials />
 			</div>

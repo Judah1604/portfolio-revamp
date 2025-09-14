@@ -10,36 +10,26 @@ function Hero() {
 
 			<div className="hero">
 				<div className="text container text-center">
-					<motion.h1
-						initial={{ translateY: 150 }}
-						whileInView={{ translateY: 0 }}
-						transition={{ type: "spring", delay: 0.2, bounce: 0.3 }}
-						viewport={{ once: true }}
-					>
-						Design. <span className="blue">Code.</span>{" "}
-						<span className="yellow">Elevate.</span>
-					</motion.h1>
-					<motion.p
-						initial={{ translateY: 120 }}
-						whileInView={{ translateY: 0 }}
-						transition={{ type: "spring", delay: 0.3 }}
-						viewport={{ once: true }}
-					>
-						<b>Frontend dev + UI/UX designer</b> building sleek,
-						responsive web experiences.
-					</motion.p>
-					<motion.a
-						className="btn btn-blue"
-						initial={{ translateY: 140 }}
-						whileInView={{ translateY: 0 }}
-						transition={{ type: "spring", delay: 0.4 }}
-						viewport={{ once: true }}
-						href="/Judah Oyedele's Resume.pdf"
-						download
-					>
-						<img src="/Icons/download.svg" />
-						Download Resume
-					</motion.a>
+					<h1>
+						World-class interfaces for <br /> startups ready to
+						scale.
+					</h1>
+					<div className="btns">
+						<a
+							className="btn btn-blue icon-left"
+							href="#contact-form"
+						>
+							Start Now
+							<i class="fa-solid fa-plane-departure"></i>
+						</a>
+						<a
+							className="btn btn-fill icon-left"
+							href="#projects"
+						>
+							View Work
+							<i class="fa-solid fa-arrow-down"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 

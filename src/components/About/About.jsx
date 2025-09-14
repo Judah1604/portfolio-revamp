@@ -42,11 +42,7 @@ function About() {
 		<>
 			<div className="about text-center" id="about">
 				<div className="intro container">
-					<img
-						src="/Effects/Star.png"
-						alt="Star"
-						className="section-highlight"
-					/>
+
 					<h1>
 						Hi, I'm Judah — I turn ideas into smooth, responsive,
 						and beautiful web interfaces. With a strong eye for
@@ -71,11 +67,6 @@ function About() {
 			<Services />
 			<div className="info-wrapper">
 				<div className="info container text-center">
-					<img
-						src="/Effects/Star.png"
-						alt="Star"
-						className="section-highlight"
-					/>
 					<h1 className="header">About Me!</h1>
 					<div className="row mt-4">
 						<motion.div
@@ -101,14 +92,6 @@ function About() {
 								not only turns heads but turns visitors into
 								loyal users.
 							</p>
-							<a
-								className="btn btn-blue icon-left"
-								href="/Judah Oyedele's Resume.pdf"
-								download
-							>
-								<img src="/Icons/download.svg" />
-								Download Resume
-							</a>
 						</motion.div>
 						<img
 							src="/Images/Profile.png"
@@ -126,11 +109,6 @@ function About() {
 				<img className="glow2" src="/Effects/Star_2.png" alt="Glow" />
 			</div>
 			<div className="what-i-use container text-center">
-				<img
-					src="/Effects/Star.png"
-					alt="Star"
-					className="section-highlight"
-				/>
 				<h1>What I Use</h1>
 				<motion.div
 					className="row"

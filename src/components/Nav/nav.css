@@ -1,14 +1,21 @@
 nav {
   position: sticky !important;
-  top: 0;
+  top: 20px;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  padding: 15px 0 !important;
+  padding: 5px 0 !important;
+  width: 80%;
+  margin: auto;
+  border-radius: 100px;
+}
+nav .btn {
+  margin-right: 2px;
+  border-radius: 90px !important;
 }
 nav .navbar-brand img {
-  height: 30px;
+  height: 50px;
 }
 nav .menu-icon {
   display: none;
@@ -81,7 +88,6 @@ nav .menu-icon span {
 .navlinks a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }

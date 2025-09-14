@@ -39,25 +39,11 @@ function FRDev({ projectState }) {
 			viewLink: "https://movipix.netlify.app/",
 		},
 		{
-			name: "Calculator",
-			image: "calculator",
-			langs: ["React", "SASS"],
-			codeLink: "https://github.com/Judah1604/Calculator",
-			viewLink: "https://judah1604.github.io/Calculator",
-		},
-		{
 			name: "Github Users Search",
 			image: "github_user_search",
 			langs: ["React", "SASS"],
 			codeLink: "https://github.com/Judah1604/Github-user-search",
 			viewLink: "https://judah1604.github.io/Github-user-search/",
-		},
-		{
-			name: "Insure Landing Page",
-			image: "insure",
-			langs: ["React", "SASS"],
-			codeLink: "https://github.com/Judah1604/Insure-Landing-Page",
-			viewLink: "https://judah1604.github.io/Insure-Landing-Page",
 		},
 	];
 

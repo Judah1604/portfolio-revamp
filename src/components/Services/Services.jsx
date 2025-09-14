@@ -4,12 +4,6 @@ import "./services.css";
 function Services() {
 	return (
 		<div className="services container text-center" id="services">
-			<img
-				src="/Effects/Star.png"
-				alt="Star"
-				className="section-highlight"
-			/>
-			<h1 className="header">Services</h1>
 			<div className="container row">
 				<motion.div
 					className="service design col-md-5"

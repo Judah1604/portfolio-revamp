@@ -9,42 +9,20 @@
         h1 {
             font-weight: 600;
             font-size: 4em;
+            letter-spacing: -1px;
+            line-height: 1em;
         }
 
-        .blue {
-            background-image: linear-gradient(180deg, #80b3ff, #10468D);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
+        .btns {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
 
-        .yellow {
-            background-image: linear-gradient(180deg, #FFC978, #FFA419);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
-
-        p {
-            font-size: 1.1em;
-        }
-
-        .btn {
-            margin: auto;
-            box-shadow: 0px 0px 20px rgba($color: #418CFB, $alpha: 0.3), 0px 0px 100px rgba($color: #418CFB, $alpha: 0.3);
-            width: fit-content;
-
-            &:hover {
-                box-shadow: 0px 0px 30px rgba($color: #418CFB, $alpha: 0.3), 0px 0px 110px rgba($color: #418CFB, $alpha: 0.3);
-                transform: none;
+            .btn {
+                border-radius: 10px;
             }
         }
-    }
-
-    b {
-        font-weight: 500;
     }
 }
 

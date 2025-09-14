@@ -62,26 +62,8 @@ function Socials() {
 				variants={item}
 				whileHover={item.hover}
 			>
-				<a href="https://www.behance.net/aurora1604">
-					<img src="/Icons/Socials/behance.svg" alt="mail" />
-				</a>
-			</motion.div>
-			<motion.div
-				className="link col-md-1"
-				variants={item}
-				whileHover={item.hover}
-			>
 				<a href="https://linkedin.com/in/judah-oyedele">
 					<img src="/Icons/Socials/linkedin.svg" alt="mail" />
-				</a>
-			</motion.div>
-			<motion.div
-				className="link col-md-1"
-				variants={item}
-				whileHover={item.hover}
-			>
-				<a href="https://codepen.io/Judah1604">
-					<img src="/Icons/Socials/codepen.svg" alt="mail" />
 				</a>
 			</motion.div>
 		</motion.div>

@@ -4,9 +4,6 @@
   position: relative;
   overflow: initial;
 }
-.projects .section-highlight {
-  margin-bottom: 10px;
-}
 .projects .header {
   font-size: 3.3em;
   font-weight: 600;
@@ -33,7 +30,7 @@
   background-color: rgba(255, 255, 255, 0.05);
 }
 .projects .pill > *.active {
-  background-color: #0066ff;
+  background-color: #2875e2;
 }
 .projects .wrapper {
   margin-top: 20px;
@@ -123,6 +120,9 @@
 .projects .design .btn-blue img {
   margin-right: 4px;
 }
+.projects .design .description {
+  text-align: left;
+}
 .projects .design .overlay {
   position: absolute;
   transition: 0.3s ease;
@@ -163,11 +163,11 @@
   border: 2px solid white;
   border-radius: 100px;
 }
-.projects .site .btn-fill img {
-  filter: brightness(0);
-}
 .projects .site .btn-fill:hover img {
   filter: brightness(0);
+}
+.projects .btn {
+  border-radius: 100px;
 }
 
 .fadeIn {

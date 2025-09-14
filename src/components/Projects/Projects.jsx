@@ -8,11 +8,7 @@ function Projects() {
 
 	return (
 		<div className="projects text-center" id="projects">
-			<img
-				src="/Effects/Star.png"
-				alt="Star"
-				className="section-highlight"
-			/>
+			
 			<h1 className="header">Projects</h1>
 			<div className="pill">
 				<div
