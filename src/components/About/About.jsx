@@ -42,7 +42,6 @@ function About() {
 		<>
 			<div className="about text-center" id="about">
 				<div className="intro container">
-
 					<h1>
 						Hi, I'm Judah — I turn ideas into smooth, responsive,
 						and beautiful web interfaces. With a strong eye for
@@ -76,15 +75,14 @@ function About() {
 							transition={{ type: "spring", bounce: 0.4 }}
 							viewport={{ once: true }}
 						>
-							Hey, I’m Judah Oyedele — a{" "}
-							<b>frontend developer and UI/UX designer</b> with
-							over <b>4 years of experience</b> crafting web
-							experiences that not only <b>look good,</b> but{" "}
-							<b>convert</b>. I prioritize conversion in my
-							designs because beauty and results are both crucial
-							to a good design. Whether it’s tweaking user flows,
-							optimizing layouts, or building smooth interactions,
-							I focus on making every click count.
+							Hey, I’m Judah Oyedele, a{" "}
+							<b>frontend developer and product designer </b>
+							skilled in crafting web experiences that don’t just
+							look good, but feel right. I prioritize conversion
+							in my designs because beauty and results are both
+							crucial to a good design. Whether it’s tweaking user
+							flows, optimizing layouts, or building smooth
+							interactions, I focus on making every click count.
 							<p>
 								Combining clean code with smart design, I create
 								interfaces that guide users effortlessly and

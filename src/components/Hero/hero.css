@@ -19,7 +19,8 @@
   gap: 20px;
 }
 .hero .text .btns .btn {
-  border-radius: 10px;
+  border-radius: 30px;
+  padding: 15px 30px;
 }
 
 .scroll {

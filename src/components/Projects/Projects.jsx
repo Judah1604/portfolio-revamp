@@ -19,7 +19,7 @@ function Projects() {
 					}
 					onClick={() => setProjectState("ui/ux")}
 				>
-					UI/UX Design
+					Product Design
 				</div>
 				<div
 					className={

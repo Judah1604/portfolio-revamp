@@ -41,8 +41,8 @@ function UIDesign({ name, tags, viewLink, openCarousel, prototype, description }
 					href={viewLink}
 					target="_blank"
 				>
-					<img src="/Icons/arrow-up-right.svg" alt="link" />
 					Visit Design Link
+					{/* <img src="/Icons/arrow-up-right.svg" alt="link" /> */}
 				</a>
 			</div>
 		</motion.div>

@@ -95,7 +95,6 @@
 .projects .design .btns .btn-blue,
 .projects .site .btns .btn-blue {
   transform: none;
-  background-color: #0066ff !important;
 }
 .projects .design .btns > *,
 .projects .site .btns > * {
@@ -103,7 +102,7 @@
 }
 .projects .design .btns > * img,
 .projects .site .btns > * img {
-  width: 25px;
+  width: 23px;
 }
 .projects .design .btns .link:hover img,
 .projects .site .btns .link:hover img {
