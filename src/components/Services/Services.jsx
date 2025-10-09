@@ -21,9 +21,7 @@ function Services() {
 						effortlessly and drive action. With tools like Figma and
 						a sharp eye for detail, I focus on layout, hierarchy,
 						and consistency to create designs that don’t just look
-						good — they work. Whether it’s a landing page or a full
-						web app, I always design with purpose and conversion in
-						mind.
+						good, they work. 
 					</p>
 				</motion.div>
 				<motion.div
@@ -42,9 +40,7 @@ function Services() {
 						experiences using HTML, CSS, JavaScript, and React. I
 						care about clean code, performance, and making sure
 						everything works smoothly across devices. Whether I’m
-						building a full site or reusable components, I focus on
-						creating seamless, user-friendly interfaces that bring
-						designs to life — and keep users engaged.
+						building a full site or reusable components.
 					</p>
 				</motion.div>
 			</div>

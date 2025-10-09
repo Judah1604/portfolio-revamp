@@ -20,14 +20,14 @@ function Hero() {
 							href="#contact-form"
 						>
 							Start Now
-							<i class="fa-solid fa-plane-departure"></i>
+							{/* <i class="fa-solid fa-plane-departure"></i> */}
 						</a>
 						<a
 							className="btn btn-fill icon-left"
 							href="#projects"
 						>
 							View Work
-							<i class="fa-solid fa-arrow-down"></i>
+							{/* <i class="fa-solid fa-arrow-down"></i> */}
 						</a>
 					</div>
 				</div>

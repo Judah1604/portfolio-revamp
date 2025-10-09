@@ -27,7 +27,7 @@ function UIDesigns({ projectState }) {
 			folder: "VOCO",
 			imgNumber: 8,
 			description:
-				"Voco is a voice-first social app I designed to make online conversations feel natural and human. Instead of endless typing and scrolling, Voco lets people connect through quick voice notes, live audio chats, and community threads that sound more like real life. Built with a clean, modern interface, Voco is about bringing back the art of talking: simple, personal, and fun. 🎙️✨",
+				"Voco is a voice-first social app I designed to make online conversations feel natural and human. Instead of endless typing and scrolling, Voco lets people connect through quick voice notes, live audio chats, and community threads that sound more like real life. Built with a clean, modern interface, Voco is about bringing back the art of talking: simple, personal, and fun.",
 			prototype:
 				"https://www.figma.com/proto/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?page-id=0%3A1&node-id=358-465&viewport=-7954%2C-3521%2C1&t=3fYGXHAfkQ8t6Lke-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2",
 		},
@@ -39,7 +39,7 @@ function UIDesigns({ projectState }) {
 			folder: "chopwise",
 			imgNumber: 6,
 			description:
-				"An onboarding flow for Chopwise, Chopwise is a smart food platform I designed to connect people with nearby vendors, restaurants, and home cooks. From street bites to full meals, it makes discovering and ordering food effortless—while giving vendors more visibility and smoother transactions.",
+				"An onboarding flow for Chopwise, Chopwise is a smart food platform I designed to connect people with nearby vendors, restaurants, and home cooks. From street bites to full meals, it makes discovering and ordering food effortless, while giving vendors more visibility and smoother transactions.",
 			prototype:
 				"https://www.figma.com/proto/RuqrAEwzXufkzUDNN3xgc8/30DayDesignChallenge?page-id=0%3A1&node-id=222-2&viewport=-7954%2C-3521%2C1&t=3fYGXHAfkQ8t6Lke-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=222%3A2&show-proto-sidebar=1",
 		},
@@ -51,7 +51,7 @@ function UIDesigns({ projectState }) {
 			folder: "chatapp",
 			imgNumber: 4,
 			description:
-				"ChatApp is a sleek messaging platform with full Microsoft integration—link Outlook, Teams, and OneDrive right inside your chats. Designed by me, it’s built to keep work and life flowing in one clean, secure space.",
+				"ChatApp is a sleek messaging platform with full Microsoft integration, link Outlook, Teams, and OneDrive right inside your chats. Designed by me, it’s built to keep work and life flowing in one clean, secure space.",
 		},
 		{
 			name: "ExamEdge",
@@ -60,7 +60,7 @@ function UIDesigns({ projectState }) {
 				"https://www.figma.com/design/fQydHSuzZJ6oMKgJrn7M5q/ExamEdge?node-id=0-1&t=JiId7g6VkSD3yKRo-1",
 			folder: "examedge",
 			description:
-				"ExamEdge is a platform I designed to make studying easier by keeping all your materials in one place. Notes, past questions, and study guides are neatly organized so students can focus more on learning and less on searching. It’s built to help students stay prepared, save time, and study smarter—all in a simple, distraction-free space.",
+				"ExamEdge is a platform I designed to make studying easier by keeping all your materials in one place. Notes, past questions, and study guides are neatly organized so students can focus more on learning and less on searching. It’s built to help students stay prepared, save time, and study smarter, all in a simple, distraction free space.",
 			imgNumber: 3,
 		},
 	];
